@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Smash Grill - Reservar</title>
+        <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="En Smash Grill somos expertos en dar placer a tu paladar. Échale un ojo a nuestra carta y haz una reserva en nuestro local">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Smash Grill</h1>
+            <nav>
+                <a class="navlink" href="index.html">Inicio</a>
+                <a class="navlink" href="about.html">Quiénes somos</a>
+                <a class="navlink" href="menu.html">Nuestra carta</a>
+                <a id="currpage" href="reserva.html">Reservar</a>
+            </nav>
+        </header>
+        <article> <!--Artículo para el formulario de reservas-->
+            <h2 class="arttit">Reservar</h2>
+            <div>
+                <form action="server.php" method="post">
+                    <fieldset> <!--Primer fieldset para los datos de contacto del usuario que reserva (nombre, email, telf)-->
+                        <legend>Datos de contacto</legend>
+                        <label for="nombre">Nombre y apellidos</label>
+                        <br>
+                        <input type="text" name="nombre" id="nombre">
+                        <br><br>
+                        <label for="email">Correo electrónico</label>
+                        <br>
+                        <input type="email" name="email" id="email">
+                        <br><br>
+                        <label for="telf">Teléfono</label>
+                        <br>
+                        <input type="tel" name="telf" id="telf">
+                    </fieldset>
+                    <br>
+                    <fieldset> <!--Segundo fieldset para los datos de la reserva (fecha y hora, personas, lugar, comentarios)-->
+                        <legend>Datos de la reserva</legend>
+                        <label for="fecha">Fecha</label>
+                        <br>
+                        <input type="date" name="fecha" id="fecha">
+                        <br><br>
+                        <label for="hora">Hora</label>
+                        <br>
+                        <select id="hora" name="hora"> <!--Selector del rango de hora para la reserva-->
+                            <optgroup label="Hora">
+                                <option>13:00-13:30</option>
+                                <option>14:00-14:30</option>
+                                <option>15:00-15:30</option>
+                                <option>20:00-20:30</option>
+                                <option>21:00-21:30</option>
+                                <option>22:00-22:30</option>
+                                <option>23:00-23:30</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+                        <label for="personas">Personas</label>
+                        <br>
+                        <select id="personas" name="personas"> <!--Selector del número de comensales (1-20)-->
+                            <optgroup label="Número de personas">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+                        <!--Input radio para elegir entre reserva en terraza o en interior-->
+                        <label for="terraza">Terraza</label>
+                        <input type="radio" name="pref" id="terraza" value="t">
+                        <label for="interior">Interior</label>
+                        <input type="radio" name="pref" id="interior" value="i">
+                        <br><br>
+                        <label for="especial">Comentarios</label>
+                        <br>
+                        <!--Area de texto para añadir información adicional para la reserva-->
+                        <textarea name="especial" id="especial" rows="5" cols="50" placeholder="¿Algo que deberíamos saber? ¿Alergias?"></textarea>
+                    </fieldset>
+                    <br>
+                    <!--Checkbox de términos y condiciones (incluye link a documento)-->
+                    <input type="checkbox" name="aceptar" id="aceptar" value="true">
+                    <label for="aceptar">Acepto los <a class="link" href="https://docs.google.com/document/d/1BAHxrcrPwwbnC1FiBAgg38n-qK9_wyzo2-WxqbsC70I/edit?usp=sharing" target="_blank">términos y condiciones</a></label>
+                    <br><br>
+                    <input id="bReservar" type="submit" value="Reservar"> <!--Botón para enviar formulario a servidor-->
+                </form>
+            </div>
+        </article>
+        <footer>
+            <p>Smash Grill® 2023</p>
+        </footer>
+    </body>
+</html>

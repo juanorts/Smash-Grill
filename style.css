@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #212121;
+    margin: 0; /* Elimino el margen exterior para que el encabezado y el video estén pegados a los límites de la página*/
+}
+
+header {
+    background-color: #f07f13; /* Color de fondo encabezado (barra de navegación) */
+    text-align: center;
+}
+
+nav {
+    display: inline-block; /* Mostrar los elementos del navegador en una sola linea */
+}
+
+#title {
+    color: white;
+    margin-right: 20px;
+    display: inline-block; /* Mostrar el título alineado con los links de navegación */
+}
+
+.navlink { /* Enlaces de navegación entre las páginas */
+    color: #212121;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#currpage { /* Enlace de la página mostrandose actualmente (subrayado) */
+    color: #212121;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 10px;
+}
+
+video { /* Video de la página de inicio */
+    width: 100%;
+}
+
+article { /* Estilo de los artículos de las páginas (bordes redondeados, fondo blanco) */
+    color: #212121;
+    background-color: white;
+    padding: 40px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.arttit { /* Títulos de artículos */
+    font-size: xx-large;
+    margin-top: 0; /* Elimino el margen exterior superior */
+    padding-bottom: 15px;
+    border-bottom: solid #212121 1px;
+}
+
+#content { /* Texto de "Quiénes somos" */
+    text-align: justify;
+}
+
+.link { /* Estilo del resto de enlaces de la página */
+    color: #f07f13;
+}
+
+.itemIndice { /* Estilo de los enlaces del índice para el menú */
+    color: #f07f13;
+    font-weight: bold;
+}
+
+#galeria { /* Galería de imagenes en "Quiénes somos" */
+    text-align: center;
+}
+
+img { /* Añadir sombras y redondear bordes a las imagenes */
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #212121;
+}
+
+.galeriaimg { /* Añadir margen exterior de 10 px a las fotos de la galeria "Quiénes somos" */
+    margin: 10px;
+}
+
+#indice { /* Estilo del contenedor del índice del menú (fondo blanco, bordes redondeados) */
+    text-align: center;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+ul { /* Estilo lista del índice del menú */
+    color: #f07f13;
+    text-align: left;
+}
+
+.menuitem { /* Contenedor de cada plato: desc y img*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc { /* Descripción de cada plato */
+    margin-top: 0px;
+    padding-right: 100px;
+    text-align: justify;
+    font-style: italic;
+}
+
+h3 { /* Títulos de las categorías en el menú */
+    font-size: x-large;
+}
+
+h4 { /* Títulos de los nombres de los platos en el menú */
+    color: #f07f13;
+    font-weight: bold;
+}
+
+table { /* Estilo de la tabla de alérgenos (un solo borde) */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th { /* Añadir bordes a la tabla y hacer espacio suficiente a cada columna (alineadas a la izquierda) */
+    border: 1.5px solid #212121;
+    text-align: left;
+    padding-right: 20px;
+}
+
+/* Estilo del formulario: fieldsets con bordes redondeados, labels en negrita */
+
+fieldset { 
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border: 1.5px solid #212121;
+    border-radius: 20px;
+}
+
+input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    resize: vertical;
+}
+
+legend {
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+label {
+    font-weight: bold;
+    line-height: 2em;
+}
+
+#bReservar { /* Estilo del botón de enviar reserva */
+    font-weight: bold;
+    color: #212121;
+}
+
+footer { /* Pie de página */
+    text-align: center;
+    color: white;
+}
